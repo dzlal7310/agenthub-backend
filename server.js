@@ -312,8 +312,8 @@ app.get('/api/v1/agents', (req, res) => {
 
 // ===== START =====
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`🦀 AgentHub API running at http://localhost:${PORT}`);
-  console.log(`📄 skill.md at http://localhost:${PORT}/skill.md`);
-  console.log(`📊 Stats at http://localhost:${PORT}/api/v1/stats`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`🦀 AgentHub API running on port ${PORT}`);
+  console.log(`📄 skill.md available`);
+  console.log(`📊 Stats available`);
 });
